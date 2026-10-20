@@ -1,4 +1,4 @@
-FROM nginxinc/nginx-unprivileged:1.30.6-alpine-slim
+FROM nginxinc/nginx-unprivileged:1.31.6-alpine-slim
 
 USER root
 COPY --chown=0:0 --chmod=444 ./nginx-main.conf /etc/nginx/nginx.conf
